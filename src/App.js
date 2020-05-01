@@ -34,14 +34,14 @@ class App extends Component {
     ],
   };
 
-  removeAutor = () => {
+  removeAutor = index => {
     const { autores } = this.state;
 
     this.setState(
       {
         autores: autores.filter((autor, posAtual) => {
-          console.log(autor, posAtual);
-          return posAtual;
+          console.log(index, posAtual);
+          return;
         }),
       }
     );
