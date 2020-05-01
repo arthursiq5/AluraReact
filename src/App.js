@@ -40,8 +40,7 @@ class App extends Component {
     this.setState(
       {
         autores: autores.filter((autor, posAtual) => {
-          console.log(index, posAtual);
-          return;
+          return posAtual !== index;
         }),
       }
     );
