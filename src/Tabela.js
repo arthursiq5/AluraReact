@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 
+const TableHead = () => {
+    return (
+        <thead>
+            <tr>
+                <th>Autores</th>
+                <th>Livros</th>
+                <th>Preços</th>
+                <th>Remover</th>
+            </tr>
+        </thead>
+    );
+}
+
 class Tabela extends Component {
     render() {
         return (
             <table>
-                <thead>
-                    <tr>
-                        <th>Autores</th>
-                        <th>Livros</th>
-                        <th>Preços</th>
-                        <th>Remover</th>
-                    </tr>
-                </thead>
+                <TableHead/>
                 <tbody>
                     <tr>
                         <td>Paulo</td>
