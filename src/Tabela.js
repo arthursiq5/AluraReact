@@ -13,7 +13,7 @@ const TableHead = () => {
     );
 }
 
-const TableBody = () => {
+const TableBody = (props) => {
     return (
         <tbody>
             <tr>
@@ -46,7 +46,7 @@ class Tabela extends Component {
         return (
             <table>
                 <TableHead/>
-                <TableBody/>
+                <TableBody autores={autores} />
             </table>
 
         );
