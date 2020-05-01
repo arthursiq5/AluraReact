@@ -42,6 +42,7 @@ const TableBody = () => {
 
 class Tabela extends Component {
     render() {
+        const { autores } = this.props;
         return (
             <table>
                 <TableHead/>
