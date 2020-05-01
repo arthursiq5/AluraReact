@@ -18,14 +18,14 @@ class Formulario extends Component {
         return (
             <form>
 
-                <label for="nome">Nome</label>
+                <label htmlFor="nome">Nome</label>
                 <input
                     id="nome"
                     type="text"
                     name="nome"
                 />
 
-                <label for="livro">Livro</label>
+                <label htmlFor="livro">Livro</label>
                 <input
                     id="livro"
                     type="text"
@@ -33,7 +33,7 @@ class Formulario extends Component {
                 />
 
 
-                <label for="preco">Preço</label>
+                <label htmlFor="preco">Preço</label>
                 <input
                     id="preco"
                     type="text"
