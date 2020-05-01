@@ -25,6 +25,11 @@ const TableBody = (props) => {
         )
     });
 
+    return (
+        <tbody>
+            {linhas}
+        </tbody>
+    );
 }
 
 class Tabela extends Component {
