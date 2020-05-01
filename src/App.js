@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Tabela from './Tabela';
+import Formulario from './Formulario';
+
 
 class App extends Component {
 
@@ -50,6 +52,7 @@ class App extends Component {
     return (
       <div className="App">
         <Tabela autores={ this.state.autores } removeAutor={ this.removeAutor } />
+        <Formulario />
       </div>
     );
   }
