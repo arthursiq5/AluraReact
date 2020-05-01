@@ -2,6 +2,18 @@ import React, { Component } from 'react'
 
 class Formulario extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.stateInicial = {
+            nome: '',
+            livro: '',
+            preco: '',
+        }
+
+        this.state = this.stateInicial;
+    }
+
     render() {
         return (
             <form>
