@@ -23,6 +23,7 @@ class Formulario extends Component {
                     id="nome"
                     type="text"
                     name="nome"
+                    value={ nome }
                 />
 
                 <label htmlFor="livro">Livro</label>
@@ -30,6 +31,7 @@ class Formulario extends Component {
                     id="livro"
                     type="text"
                     name="livro"
+                    value={ livro }
                 />
 
 
@@ -38,6 +40,7 @@ class Formulario extends Component {
                     id="preco"
                     type="text"
                     name="preco"
+                    value={ preco }
                 />
 
 
