@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react';
 
 /* arquivos de estilo */
 import 'materialize-css/dist/css/materialize.min.css';
+import './App.css'
 
 /* componentes do projeto */
 import Tabela from './Tabela';
