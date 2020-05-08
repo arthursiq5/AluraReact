@@ -57,8 +57,10 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <Tabela autores={ this.state.autores } removeAutor={ this.removeAutor } />
-        <Formulario escutadorDeSubmit={this.escutadorDeSubmit} />
+        <div className="container">
+          <Tabela autores={ this.state.autores } removeAutor={ this.removeAutor } />
+          <Formulario escutadorDeSubmit={this.escutadorDeSubmit} />
+        </div>
       </Fragment>
     );
   }
