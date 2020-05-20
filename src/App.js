@@ -63,7 +63,7 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <div className="container">
+        <div className="container mb-10">
           <h1>Casa do Código</h1>
           <Tabela autores={ this.state.autores } removeAutor={ this.removeAutor } />
           <Formulario escutadorDeSubmit={this.escutadorDeSubmit} />
