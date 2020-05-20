@@ -48,11 +48,20 @@ class Formulario extends Component {
     }
 
     submitFormulario = () => {
-        if(this.validador.valida(this.state)){
+
+        const validacao = this.validador.valida(this.state);
+
+        if (validacao.isValid) {
             this.props.escutadorDeSubmit(this.state);
             this.setState(this.stateInicial);
-        }else{
-            console.log('submit bloqueado');
+        } else {
+            const { nome, livro, preco } = validacao;
+            const campos = [nome, livro, preco];
+
+            const camposInvalidos = campos.filter(elem => {
+                return elem.isInvalid;
+            });
+            camposInvalidos.forEach(console.log);
         }
     }
 
