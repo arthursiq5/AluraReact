@@ -6,6 +6,7 @@ class Formulario extends Component {
     constructor(props) {
         super(props);
 
+        
         this.validador = new FormValidator([
             {
                 campo: 'nome',
@@ -32,11 +33,12 @@ class Formulario extends Component {
             nome: '',
             livro: '',
             preco: '',
+            validacao: this.validador.valido(),
         }
-
+        
         this.state = this.stateInicial;
     }
-
+    
     escutadorDeInput = event => {
         const { name, value } = event.target;
 
