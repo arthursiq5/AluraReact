@@ -6,9 +6,17 @@ class FormValidator{
         this.validacao = validacao;
     }
     
-    valida(state){
-        console.log('validado');
-        return false;
+    valida(state) {
+        const campoValor = state[this.validacao.campo.toString()];
+        const metodoValidacao = validador[this.validacao.metodo];
+
+        if (metodoValidacao(campoValor, [], state) === true) {
+            console.log("FORM INVÁLIDO");
+            return false;
+        } else {
+            console.log("FORM VÁLIDO");
+            return true;
+        }
     }
 
 }
